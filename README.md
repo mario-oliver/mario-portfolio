@@ -2,10 +2,12 @@
 
 ## Dependencies
 
+#### Styling
+
 `npm install react-icons --save`
 `npm install styled-components`
-react-router-dom
 `npm i sass'
+`npm i normalize.css`
 
 #### Functionality
 
@@ -14,6 +16,8 @@ settign up contact form without scaling personal cloud infra
 
 for a map funcitonality
 `npm i react-leaflet`
+
+routes with react-router-dom
 
 #### Animation Dependencies
 
