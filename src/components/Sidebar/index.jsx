@@ -9,6 +9,7 @@ import {
   FaEnvelope,
   FaLinkedin,
   FaYoutube,
+  FaGithub,
 } from 'react-icons/fa';
 
 const Sidebar = () => {
@@ -35,7 +36,25 @@ const Sidebar = () => {
             rel="noreferrer"
             href="https://www.linkedin.com/in/mario-oliver/"
           >
-            <FaLinkedin color="#4d4d4e" />
+            <FaLinkedin />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/mario-oliver"
+          >
+            <FaGithub />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.youtube.com/@mariooliver4051/videos"
+          >
+            <FaYoutube />
           </a>
         </li>
       </ul>
