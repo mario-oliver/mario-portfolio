@@ -3,7 +3,13 @@ import './index.scss';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo_sub.svg';
 
-import { FaHome, FaUser, FaEnvelope } from 'react-icons/fa';
+import {
+  FaHome,
+  FaUser,
+  FaEnvelope,
+  FaLinkedin,
+  FaYoutube,
+} from 'react-icons/fa';
 
 const Sidebar = () => {
   return (
@@ -12,26 +18,27 @@ const Sidebar = () => {
         <img src={logo} alt="logo" />
       </Link>
       <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
-          <FaHome color="#4d4d4e" />
+        <NavLink exact="true" className="active" to="/">
+          <FaHome color="#ffd700" />
         </NavLink>
-        <NavLink
-          exact="true"
-          activeclassname="active"
-          to="/about"
-          className="about-link"
-        >
+        <NavLink exact="true" to="/about" className="about-link">
           <FaUser color="#4d4d4e" />
         </NavLink>
-        <NavLink
-          exact="true"
-          activeclassname="active"
-          to="/contact"
-          className="contact-link"
-        >
+        <NavLink exact="true" to="/contact" className="contact-link">
           <FaEnvelope color="#4d4d4e" />
         </NavLink>
       </nav>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/mario-oliver/"
+          >
+            <FaLinkedin color="#4d4d4e" />
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };
