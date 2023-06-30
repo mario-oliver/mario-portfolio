@@ -37,5 +37,38 @@ nav {
     height: 100px;
     position: relative;
     text-decoration: none;
+
+    i {
+      transition: all 0.3s ease-out;
+    }
+
+    &:hover {
+      color: #ffd700;
+
+      svg {
+        opacity: 0;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      content: '';
+      font-size: 22px;
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      opacity: 0;
+      transition: all 03s ease-out;
+    }
+    &:first-child {
+      &::after {
+        content: 'Home';
+      }
+    }
   }
 }
