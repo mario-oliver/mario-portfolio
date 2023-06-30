@@ -1,0 +1,41 @@
+.nav-bar {
+  background: #181818;
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+
+  .logo {
+    display: block;
+    padding: 8px 0;
+
+    img {
+      display: block;
+      width: 80px;
+      height: auto;
+      margin: 8px auto;
+    }
+  }
+}
+
+nav {
+  display: block;
+  position: absolute;
+  text-align: center;
+  height: 210px;
+  top: 50%;
+  margin-top: -120px;
+  width: 100%;
+
+  a {
+    font-size: 50px;
+    color: #4d4d4e;
+    display: block;
+    line-height: 100px;
+    height: 100px;
+    position: relative;
+    text-decoration: none;
+  }
+}
