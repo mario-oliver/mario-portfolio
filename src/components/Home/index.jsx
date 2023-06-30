@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '../../assets/images/logo.svg';
 import { Link } from 'react-router-dom';
 import './index.scss';
@@ -9,7 +9,12 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const nameArray = ['a', 'r', 'i', 'o', ' ', 'O', 'l', 'i', 'v', 'e', 'r'];
   const jobArray = 'Full-Stack Web Developer'.split('');
-  console.log(jobArray);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 4000);
+  }, []);
 
   return (
     <div className="container home-page">
