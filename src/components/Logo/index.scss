@@ -7,6 +7,7 @@
   right: 20%;
   bottom: 0;
   left: auto;
+  transform: rotateZ(26deg);
 
   &:hover {
     .solid-logo {
@@ -15,7 +16,7 @@
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   .solid-logo {
     display: none;
   }
