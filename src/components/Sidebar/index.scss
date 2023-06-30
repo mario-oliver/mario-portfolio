@@ -42,18 +42,22 @@ nav {
       transition: all 0.3s ease-out;
     }
 
+    //so when hovering
     &:hover {
       color: #ffd700;
 
+      //set the svg to zero
       svg {
         opacity: 0;
       }
 
+      // and after - set opacity back to 1
       &::after {
         opacity: 1;
       }
     }
 
+    //now we are going to determine what elelemtns are "after" and what happens to them "after"
     &:after {
       content: '';
       font-size: 22px;
@@ -69,6 +73,18 @@ nav {
       &::after {
         content: 'Home';
       }
+    }
+  }
+  a.about-link {
+    &:after {
+      content: 'About';
+    }
+  }
+
+  a.contact-link {
+    &:after {
+      content: 'Contact';
+      font-size: 20px;
     }
   }
 }
