@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
+import {
+  FaHtml5,
+  FaCss3,
+  FaReact,
+  FaJsSquare,
+  FaNodeJs,
+  FaAws,
+} from 'react-icons/fa';
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -51,6 +59,29 @@ const About = () => {
           My career took me to creating and maintaining a Highly Scalable...
           Vercel AI, Tailwind.css, Next.js, and Three.js.
         </p>
+      </div>
+
+      <div className="stage-cube-cont">
+        <div className="cubespinner">
+          <div className="face1">
+            <FaHtml5 color="#f06529" />
+          </div>
+          <div className="face2">
+            <FaCss3 color="#5ed4f4" />
+          </div>
+          <div className="face3">
+            <FaReact color="#28a4d9" />
+          </div>
+          <div className="face4">
+            <FaJsSquare color="#efd81d" />
+          </div>
+          <div className="face5">
+            <FaNodeJs color="#407f37" />
+          </div>
+          <div className="face6">
+            <FaAws color="#ec4d28" />
+          </div>
+        </div>
       </div>
     </div>
   );
