@@ -6,7 +6,7 @@ import logo from '../../assets/images/logo_sub.svg';
 import {
   FaHome,
   FaUser,
-  FaEnvelope,
+  FaPuzzlePiece,
   FaLinkedin,
   FaYoutube,
   FaGithub,
@@ -25,8 +25,8 @@ const Sidebar = () => {
         <NavLink exact="true" to="/about" className="about-link">
           <FaUser color="#4d4d4e" />
         </NavLink>
-        <NavLink exact="true" to="/contact" className="contact-link">
-          <FaEnvelope color="#4d4d4e" />
+        <NavLink exact="true" to="/portfolio" className="contact-link">
+          <FaPuzzlePiece color="#4d4d4e" />
         </NavLink>
       </nav>
       <ul>

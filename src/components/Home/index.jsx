@@ -27,8 +27,9 @@ const Home = () => {
             <span className={`${letterClass} _10`}>i</span>
             <span className={`${letterClass} _11`}> </span>
             <span className={`${letterClass} _12`}>
-              <FaHandshake /> <br />
+              <FaHandshake />
             </span>
+            <br />
           </h1>
           <br />
           <h1>
@@ -54,10 +55,10 @@ const Home = () => {
           <h2>
             Javascript & Java Expert | AWS Certified | Filmmaker | Cycling &
             Basketball
-            <br></br>
           </h2>
-          <Link to="/contact" className="flat-button">
-            Contact Me
+          <h2> 336-624-2373 | marioaoliver93@gmail.com | Washington, DC</h2>
+          <Link to="/about" className="flat-button">
+            about me
           </Link>
         </div>
         <Logo></Logo>

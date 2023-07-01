@@ -31,6 +31,8 @@ const About = () => {
               idx={15}
             />
           </h1>
+          <h2> (336) 624-2373 | marioaoliver93@gmail.com | Washington, DC</h2>
+
           <p>
             I love creating... creating regardless of the medium - paint, film,
             sound, design, web, and most importantly, code. Once I decoupled the
