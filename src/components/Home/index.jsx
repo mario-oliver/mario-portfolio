@@ -5,6 +5,7 @@ import './index.scss';
 import { FaHandshake } from 'react-icons/fa';
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from '../Logo';
+import Loader from 'react-loaders';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -18,48 +19,51 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="container home-page">
-      <div className="text-zone">
-        <h1>
-          <span className={letterClass}>H</span>
-          <span className={`${letterClass} _10`}>i</span>
-          <span className={`${letterClass} _11`}> </span>
-          <span className={`${letterClass} _12`}>
-            <FaHandshake /> <br />
-          </span>
-        </h1>
-        <br />
-        <h1>
-          <span className={`${letterClass} _13`}>I</span>
-          <span className={`${letterClass} _14`}>'m</span>
-          <img src={logo} alt="developer"></img>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            idx={15}
-          />
+    <>
+      <div className="container home-page">
+        <div className="text-zone">
+          <h1>
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _10`}>i</span>
+            <span className={`${letterClass} _11`}> </span>
+            <span className={`${letterClass} _12`}>
+              <FaHandshake /> <br />
+            </span>
+          </h1>
           <br />
-        </h1>
-        <br />
-        <h1>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={jobArray}
-            idx={26}
-          />{' '}
-          <br></br>
-        </h1>
-        <h2>
-          Javascript & Java Expert | AWS Certified | Filmmaker | Cycling &
-          Basketball
-          <br></br>
-        </h2>
-        <Link to="/contact" className="flat-button">
-          Contact Me
-        </Link>
+          <h1>
+            <span className={`${letterClass} _13`}>I</span>
+            <span className={`${letterClass} _14`}>'m</span>
+            <img src={logo} alt="developer"></img>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={15}
+            />
+            <br />
+          </h1>
+          <br />
+          <h1>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={jobArray}
+              idx={26}
+            />{' '}
+            <br></br>
+          </h1>
+          <h2>
+            Javascript & Java Expert | AWS Certified | Filmmaker | Cycling &
+            Basketball
+            <br></br>
+          </h2>
+          <Link to="/contact" className="flat-button">
+            Contact Me
+          </Link>
+        </div>
+        <Logo></Logo>
       </div>
-      <Logo></Logo>
-    </div>
+      <Loader type="pacman" />
+    </>
   );
 };
 
