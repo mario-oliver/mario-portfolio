@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
+import Review from '../Standalone/Reviews';
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -25,6 +26,7 @@ const Portfolio = () => {
           </h1>
           <h2> (336) 624-2373 | marioaoliver93@gmail.com | Washington, DC</h2>
         </div>
+        {/* <Review></Review> */}
       </div>
       <Loader type="pacman" />
     </>
