@@ -34,35 +34,60 @@ const About = () => {
           <h2> (336) 624-2373 | marioaoliver93@gmail.com | Washington, DC</h2>
 
           <p>
-            I love creating... creating regardless of the medium - paint, film,
-            sound, design, web, and most importantly, code. Once I decoupled the
-            medium from the act of creating, coding became a superpower.
+            As a versatile creator, I find joy in expressing my creativity
+            across various mediums including paint, film, sound, design, web,
+            and code. By realizing that coding transcends any specific medium,
+            it has become a superpower that empowers me to bring my ideas to
+            life.
           </p>
           <p>
-            My current obsession is with web tools, specifically leveraging AI.
-            Discovering how to create a product that scales, that users loves,
-            and that utilizes Large Language Models and vector-based databases.
-            Sprinkle in my latest love of Javascript and you have my complete
-            attention.
+            My current passion lies in the realm of web development, where I am
+            fascinated by the possibilities of leveraging AI to build scalable
+            and user-centric products. I am driven by the pursuit of creating
+            web experiences that users love, harnessing the potential of Large
+            Language Models and vector-based databases. JavaScript has captured
+            my full attention and I continuously explore its capabilities.
           </p>
           <p>
-            I spent the last year doing two things:{' '}
-            <ol>
-              1) Learning how to leverage logic in Javascript and web
-              technologies - mainly with React.js, Next.js, Express, Node.js,
-              HTML5, CSS3, Sass, Styled-Components, animate.css, and Framer
-              Motion.{' '}
-            </ol>
-            <ol>
-              2) And, Fully immersing myself into the creative process through
-              the creation of digital agency focused on leverage web automation,
-              content creation, and film production for different clients,
-              including Kahoot, Inc.
-            </ol>
+            Over the past year, I have dedicated myself to two key areas of
+            growth:
           </p>
           <p>
-            My career took me to creating and maintaining a Highly Scalable...
-            Vercel AI, Tailwind.css, Next.js, and Three.js.
+            <span>1. JavaScript and Web Technologies:</span> I have immersed
+            myself in mastering the logic and intricacies of JavaScript, while
+            also expanding my expertise in a range of web technologies. I am
+            proficient in utilizing frameworks such as React.js, Next.js, and
+            libraries like Express and Node.js. Additionally, I have a solid
+            foundation in HTML5, CSS3, Sass, Styled-Components, animate.css, and
+            Framer Motion.
+          </p>
+          <p>
+            <span>2. Digital Agency and Creative Process: </span>Embracing the
+            creative process, I have established a digital agency where I
+            harness the power of web automation, content creation, and film
+            production to serve diverse clients. Notably, I have had the
+            privilege of collaborating with esteemed organizations like Kahoot,
+            Inc. in delivering tailored solutions that meet their unique
+            requirements.
+          </p>
+          <p>
+            Throughout my career, I have demonstrated my ability to create and
+            maintain highly scalable projects. Leveraging advanced
+            infrastructure and code to manage the "single source of truth" API
+            (infrastructure and code) and database for all customer financial
+            data (transactions, accounts, account relationships) at Capital One.
+            This API is used across all Capital One as a high-impact, high
+            resiliency application used to service 160 Million users handling
+            100,000+ TPS with availability and durability of 99.9^6.
+            Responsibilities:
+          </p>
+          <p>
+            Passionate about pushing the boundaries of technology and design, I
+            am committed to continuous learning and exploring innovative ways to
+            merge my creative instincts with my technical skills. By combining
+            my love for creation, expertise in web development, and enthusiasm
+            for AI-driven solutions, I aim to make a lasting impact in the field
+            of full stack web development.
           </p>
         </div>
 

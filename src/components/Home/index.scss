@@ -1,11 +1,13 @@
 .home-page {
+  overflow: auto;
+
   .text-zone {
     position: absolute;
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
     width: 50%;
-    max-height: 90%;
+    max-height: 100%;
   }
 
   h1 {
