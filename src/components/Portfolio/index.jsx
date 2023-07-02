@@ -15,7 +15,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <div className="container about-page">
+      <div className="container portfolio-page">
         <div className="text-zone">
           <h1>
             <AnimatedLetters
@@ -26,7 +26,9 @@ const Portfolio = () => {
           </h1>
           <h2> (336) 624-2373 | marioaoliver93@gmail.com | Washington, DC</h2>
         </div>
-        {/* <Review></Review> */}
+        <div className="stage">
+          <Review></Review>
+        </div>
       </div>
       <Loader type="pacman" />
     </>
