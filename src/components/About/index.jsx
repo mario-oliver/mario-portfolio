@@ -79,7 +79,6 @@ const About = () => {
             This API is used across all Capital One as a high-impact, high
             resiliency application used to service 160 Million users handling
             100,000+ TPS with availability and durability of 99.9^6.
-            Responsibilities:
           </p>
           <p>
             Passionate about pushing the boundaries of technology and design, I
