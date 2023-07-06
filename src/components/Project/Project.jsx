@@ -1,9 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
+import './index.scss';
+import { Link } from 'react-router-dom';
 
 const Project = ({ project }) => {
   let { image, info, name, price, company } = project;
   let [readMore, isReadMore] = useState(false);
+  const Jobify = 'Jobify';
 
   return (
     <article className="single-tour">
@@ -20,6 +23,13 @@ const Project = ({ project }) => {
           >
             {!readMore ? 'Read More' : 'Read Less'}
           </button>
+          {!(name === Jobify) ? (
+            <button type="button" className="btn btn-block more-button">
+              Open Website
+            </button>
+          ) : (
+            <h1>Coming Soon</h1>
+          )}
         </p>
       </div>
     </article>
