@@ -7,7 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build-client": "cd client && npm run build",
+    "server": "nodemon server.js --ignore client",
+    "client": "cd client && npm run start",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "setup-production": "npm run install-client && npm run build-client && npm install",
+    "install-client": "cd client && npm install"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -22,7 +28,12 @@
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.14.0",
     "sass": "^1.63.6",
-    "styled-components": "^6.0.1"
+    "styled-components": "^6.0.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "openai": "^3.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
