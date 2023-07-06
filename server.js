@@ -2,19 +2,19 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import dotenv from 'dotenv';
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 const port = 3080;
 
-//********* CHAT GPT CODE */
-import api_key from './keys/api_key.js';
+dotenv.config();
 
 import { Configuration, OpenAIApi } from 'openai';
+
 const configuration = new Configuration({
   organization: process.env.OPENAI_ORG_KEY,
   apiKey: process.env.OPENAI_API_KEY,
-  // apiKey: api_key,
 });
 const openai = new OpenAIApi(configuration);
 
