@@ -24,9 +24,13 @@ const Project = ({ project }) => {
             {!readMore ? 'Read More' : 'Read Less'}
           </button>
           {!(name === Jobify) ? (
-            <button type="button" className="btn btn-block more-button">
-              Open Website
-            </button>
+            <Link
+              to="/chatgpt"
+              className="flat-button"
+              style={{ margin: '30px' }}
+            >
+              open
+            </Link>
           ) : (
             <h1>Coming Soon</h1>
           )}

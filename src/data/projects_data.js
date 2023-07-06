@@ -6,7 +6,7 @@ const projects = [
     price: '1.1B',
     image:
       'https://i0.wp.com/bdtechtalks.com/wp-content/uploads/2022/12/openai-chatgpt.jpg?ssl=1',
-    info: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+    info: "Introducing MOpen.ai's ChatGPT Clone: Your Intelligent Conversation Companion. \nChatGPT Clone is an advanced app that brings the power of conversational AI to your fingertips. Engage in seamless, meaningful dialogues with its cutting-edge technology. Enjoy personalized conversations, explore topics, and get intelligent responses. Download now for an exceptional conversational experience.",
   },
   {
     id: 2,
