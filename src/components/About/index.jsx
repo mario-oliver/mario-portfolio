@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
-import Loader from 'react-loaders';
+// import Loader from 'react-loaders';
 import {
   FaHtml5,
   FaCss3,
