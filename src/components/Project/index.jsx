@@ -1,31 +1,22 @@
 import React from 'react';
-import Tour from './Project';
-import { useEffect } from 'react';
 import { useState } from 'react';
-const url = 'https://course-api.com/react-tours-project';
+import projects from '../../data/projects_data';
 import Loader from 'react-loaders';
+import Project from './Project';
 
 const Projects = () => {
-  const [tours, setTours] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-
-  if (isLoading) {
-    return (
-      <main>
-        <Loader type="pacman" />
-      </main>
-    );
-  }
+  const [projectData, setProjectData] = useState([...projects]);
 
   return (
     <div className="title">
       <h2>Our Tours</h2>
       <div className="title-underline"></div>
       <div className="tours">
-        {tours.map((tour) => {
-          return <Tour key={tour.id} tour={tour} removeTour={removeTour} />;
+        {projectData.map((project) => {
+          return <Project key={project.id} project={project} />;
         })}
       </div>
+      <Loader type="pacman" />
     </div>
   );
 };

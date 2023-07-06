@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 
-const Tour = ({ tour, removeTour }) => {
-  let { id, image, info, name, price } = tour;
+const Project = ({ project }) => {
+  let { image, info, name, price, company } = project;
   let [readMore, isReadMore] = useState(false);
 
   return (
@@ -21,17 +21,9 @@ const Tour = ({ tour, removeTour }) => {
             {!readMore ? 'Read More' : 'Read Less'}
           </button>
         </p>
-
-        <button
-          type="button"
-          className="btn btn-block btn-delete"
-          onClick={() => removeTour(id)}
-        >
-          Not Interested
-        </button>
       </div>
     </article>
   );
 };
 
-export default Tour;
+export default Project;
