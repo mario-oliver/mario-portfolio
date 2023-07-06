@@ -12,9 +12,9 @@ import api_key from './keys/api_key.js';
 
 import { Configuration, OpenAIApi } from 'openai';
 const configuration = new Configuration({
-  organization: 'org-rpY6h9a2QPo5zpxqEoG9c5cC',
-  //   apiKey: process.env.OPENAI_API_KEY,
-  apiKey: api_key,
+  organization: process.env.OPENAI_ORG_KEY,
+  apiKey: process.env.OPENAI_API_KEY,
+  // apiKey: api_key,
 });
 const openai = new OpenAIApi(configuration);
 
