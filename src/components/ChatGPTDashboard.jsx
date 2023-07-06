@@ -4,6 +4,9 @@ import mlogo from '../assets/images/m_logo.svg';
 import mopenai_logo from '../assets/images/MOpenAI.svg';
 import { useState } from 'react';
 
+// import dotenv from 'dotenv';
+// dotenv.config();
+
 function App() {
   const [input, setInput] = useState('');
   const [chatLog, setChatLog] = useState([
@@ -24,7 +27,8 @@ function App() {
     setInput('');
 
     const message = chatLogNew.map((message) => message.message).join('\n');
-    const response = await fetch('http://localhost:3080/', {
+    // const response = await fetch(process.env.REACT_APP_BACKEND_URL, {
+    const response = await fetch('http://localhost:3080/prompt', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

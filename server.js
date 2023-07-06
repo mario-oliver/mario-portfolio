@@ -2,12 +2,12 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import dotenv from 'dotenv';
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 const port = 3080;
 
+import dotenv from 'dotenv';
 dotenv.config();
 
 import { Configuration, OpenAIApi } from 'openai';
@@ -18,7 +18,7 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-app.post('/', async (req, res) => {
+app.post('/prompt', async (req, res) => {
   const { message } = req.body;
   //   console.log(message);
   const response = await openai.createCompletion({
