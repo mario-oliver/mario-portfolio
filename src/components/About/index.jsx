@@ -41,12 +41,15 @@ const About = () => {
             life.
           </p>
           <p>
-            My current passion lies in the realm of web development, where I am
-            fascinated by the possibilities of leveraging AI to build scalable
-            and user-centric products. I am driven by the pursuit of creating
-            web experiences that users love, harnessing the potential of Large
-            Language Models and vector-based databases. JavaScript has captured
-            my full attention and I continuously explore its capabilities.
+            <span>
+              My current passion lies in the realm of web development, where I
+              am fascinated by the possibilities of leveraging AI to build
+              scalable and user-centric products.
+            </span>{' '}
+            I am driven by the pursuit of creating web experiences that users
+            love, harnessing the potential of Large Language Models and
+            vector-based databases. JavaScript has captured my full attention
+            and I continuously explore its capabilities.
           </p>
           <p>
             Over the past year, I have dedicated myself to two key areas of
@@ -71,14 +74,17 @@ const About = () => {
             requirements.
           </p>
           <p>
-            Throughout my career, I have demonstrated my ability to create and
+            Throughout my career, I have demonstrated an ability to create and
             maintain highly scalable projects. Leveraging advanced
             infrastructure and code to manage the "single source of truth" API
             (infrastructure and code) and database for all customer financial
             data (transactions, accounts, account relationships) at Capital One.
-            This API is used across all Capital One as a high-impact, high
-            resiliency application used to service 160 Million users handling
-            100,000+ TPS with availability and durability of 99.9^6.
+            <span>
+              This API is used across all Capital One as a high-impact, high
+              resiliency application used to service 160 Million users handling
+              100,000+ TPS with availability and durability of 99.9^6{' '}
+            </span>
+            .
           </p>
           <p>
             Passionate about pushing the boundaries of technology and design, I
@@ -113,7 +119,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Loader type="pacman" />
+      {/* <Loader type="pacman" /> */}
     </>
   );
 };

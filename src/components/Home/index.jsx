@@ -24,17 +24,18 @@ const Home = () => {
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
-            <span className={`${letterClass} _10`}>i</span>
-            <span className={`${letterClass} _11`}> </span>
-            <span className={`${letterClass} _12`}>
+            <span className={`${letterClass} _9`}>i</span>
+            <span className={`${letterClass} _10`}> </span>
+            <span className={`${letterClass} _11`}>
               <FaHandshake />
             </span>
             <br />
           </h1>
           <br />
           <h1>
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
+            <span className={`${letterClass} _12`}>I</span>
+            <span className={`${letterClass} _13`}>'</span>
+            <span className={`${letterClass} _14`}>m</span>
             <img src={logo} alt="developer"></img>
             <AnimatedLetters
               letterClass={letterClass}
@@ -59,6 +60,13 @@ const Home = () => {
           <h2> 336-624-2373 | marioaoliver93@gmail.com | Washington, DC</h2>
           <Link to="/about" className="flat-button">
             about me
+          </Link>
+          <Link
+            to="/chatgpt"
+            className="flat-button"
+            style={{ marginLeft: '30px' }}
+          >
+            You created a ChatGPT clone?
           </Link>
         </div>
         <Logo></Logo>
