@@ -31,6 +31,10 @@ app.post('/prompt', async (req, res) => {
   res.json({ message: response.data.choices[0].text });
 });
 
+app.get('/', async (req, res) => {
+  res.send('hello world!');
+});
+
 app.get('/models', async (req, res) => {
   const response = await openai.listEngines();
   console.log(response);

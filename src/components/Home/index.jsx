@@ -66,7 +66,7 @@ const Home = () => {
             className="flat-button"
             style={{ marginLeft: '30px' }}
           >
-            You created a ChatGPT clone?
+            ask my GPT some questions
           </Link>
         </div>
         <Logo></Logo>

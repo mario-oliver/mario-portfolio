@@ -1,0 +1,24 @@
+.widgets-page {
+  h1 {
+    font-size: 53px;
+    font-family: 'Coolvetica';
+    color: #ffd700;
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: 10px;
+  }
+  .widgets {
+    width: 100vh;
+    height: 20vh;
+    margin-left: 10%;
+  }
+  .single-widget {
+    width: 100vh;
+    height: 80vh;
+  }
+  .main {
+    width: 80vh;
+  }
+}

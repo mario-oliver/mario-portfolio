@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ChatGPTDashboard from './components/ChatGPTDashboard.jsx';
+import Widgets from './components/Widgets';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route index element={<Home></Home>} />
           <Route path="about" element={<About></About>} />
           <Route path="portfolio" element={<Portfolio></Portfolio>} />
+          <Route path="components" element={<Widgets></Widgets>} />
           <Route
             path="chatgpt"
             element={<ChatGPTDashboard></ChatGPTDashboard>}
