@@ -20,7 +20,7 @@ const Widgets = () => {
 
   return (
     <div>
-      <div className="container widgets-page">
+      <div className="container2 widgets-page">
         <div className="widgets">
           <h1>
             <AnimatedLetters
