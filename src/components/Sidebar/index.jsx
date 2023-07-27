@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.scss';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo_sub.svg';
@@ -13,6 +13,12 @@ import {
 } from 'react-icons/fa';
 
 const Sidebar = () => {
+  const [showSideNav, setShowSideNav] = useState(false);
+
+  const toggleSideNav = () => {
+    setShowSideNav(!showSideNav);
+  };
+
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
@@ -20,13 +26,13 @@ const Sidebar = () => {
       </Link>
       <nav>
         <NavLink exact="true" className="active" to="/">
-          <FaHome color="#4d4d4e" />
+          <FaHome color="#c4c4c4" />
         </NavLink>
         <NavLink exact="true" to="/about" className="about-link">
-          <FaUser color="#4d4d4e" />
+          <FaUser color="#c4c4c4" />
         </NavLink>
         <NavLink exact="true" to="/portfolio" className="contact-link">
-          <FaPuzzlePiece color="#4d4d4e" />
+          <FaPuzzlePiece color="#c4c4c4" />
         </NavLink>
       </nav>
       <ul>
