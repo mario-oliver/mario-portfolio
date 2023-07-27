@@ -69,7 +69,7 @@ const Home = () => {
             ask my GPT some questions
           </Link>
         </div>
-        <Logo></Logo>
+        {/* <Logo></Logo> */}
       </div>
       <Loader type="pacman" />
     </>

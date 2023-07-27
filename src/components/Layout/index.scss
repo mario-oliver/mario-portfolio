@@ -3,19 +3,20 @@
   height: 100%;
   left: 100px;
   position: absolute;
+  overflow: scroll;
 }
 
 .top-tags {
   bottom: auto;
-  top: 35px;
+  top: 10px;
 }
 
 .tags {
   color: #ffd700;
-  opacity: 0.6;
+  opacity: 1;
   position: absolute;
   bottom: 0;
-  left: 60px;
+  left: 20px;
   font-size: 18px;
   font-family: 'La Belle Aurore';
 }
@@ -194,5 +195,28 @@
 .portfolio-page {
   .stage {
     overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: grid;
+  }
+  .logo-container {
+    display: none;
+  }
+  .top-tags {
+    bottom: auto;
+    top: 0px;
+    left: 0;
+  }
+
+  .tags {
+    bottom: 0;
+    left: 0px;
+  }
+
+  .bottom-tag-html {
+    margin-left: -20px;
   }
 }
