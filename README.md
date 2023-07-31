@@ -31,3 +31,7 @@ for loaders (packman)
 
 the loaders will need a react integration component
 `npm i react-loaders`
+
+## Widgets
+
+#### Color Generator
